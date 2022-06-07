@@ -84,20 +84,35 @@ a {
     flex-direction: column;
     align-self: center;
     text-align: center;
+    margin-bottom: 36px;
 }
 
 #infohead {
     font-size: 36px;
     font-weight: extra-bold; 
     color: #1F2937;
+    padding: 40px;
 }
 
 .memberC {
     display: flex;
+    gap: 40px;
 }
 
-.member img,
-.member .infotext {
+.member img {
     width: 200px;
     height: 200px;
+}
+
+.member .infotext {
+    width: 200px;
+}
+
+.member img {
+    border-radius: 25px;
+    border: 2px solid blue;
+}
+
+.quote {
+    background-color: #e5e7eb;
 }
