@@ -81,8 +81,8 @@ a {
 
 .info {
     display: flex;
-    justify-content: center;
-    gap: 60px;
+    flex-direction: column;
+    align-self: center;
     text-align: center;
 }
 
@@ -92,6 +92,12 @@ a {
     color: #1F2937;
 }
 
-.member {
-    max-width: 200px;
+.memberC {
+    display: flex;
+}
+
+.member img,
+.member .infotext {
+    width: 200px;
+    height: 200px;
 }
