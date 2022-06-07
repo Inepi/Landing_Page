@@ -1,19 +1,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-body {
-    display: flex;
-    flex-direction: column;
+*{
     font-family: 'Roboto', sans-serif;
-    justify-content: center;
 }
 
-button {
-    background-color: #3882F6;
-    border: none;
-    border-radius: 8px;
-    padding: 8px 16px;
-    color: #F9FAF8;
+body {
+    margin: 0px;
+}
+.parentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 ul {
@@ -35,24 +33,39 @@ a {
 
 .header, .footer, .hero{
     background-color: #1F2937;
-    padding: 16px 80px;
+    padding: 16px 200px;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    font-size: 24px;
+    color: #F9FAF8;
 }
 
 .hero {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .heroContainer {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    flex: 0 1 0
+    gap: 10px;
+    width: 600px;
+}
+.button {
+    background-color: #3882F6;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    color: #F9FAF8;
+    align-self: start;
 }
 
 #heroMain {
@@ -60,7 +73,25 @@ a {
     color: #F9FAF8
 }
 
-#logo {
-    font-size: 24px;
-    color: #F9FAF8;
+.img1 {
+    height: 250px;
+    width: 600px;
+    flex-shrink: 0;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    text-align: center;
+}
+
+#infohead {
+    font-size: 36px;
+    font-weight: extra-bold; 
+    color: #1F2937;
+}
+
+.member {
+    max-width: 200px;
 }
